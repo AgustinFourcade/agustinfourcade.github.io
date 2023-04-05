@@ -34,13 +34,30 @@ export const Skills = () => {
             <div className="skill-box">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I possess a range of skills in several programming languages.
+              </p>
+              <p>
+                I am able to use these languages to create dynamic and engaging
+                web applications. In addition, I have a solid understanding of
+                both SQL and NoSQL databases, which allows me to design scalable
+                and efficient data solutions. I am also familiar with tools such
+                as GIT and Jira, which help me manage and collaborate on
+                projects with other team members. In terms of personal
+                qualities, I am proactive and able to take initiative, which
+                enables me to identify and solve problems effectively.
+              </p>
+              <p>
+                I work well in a team environment and am able to communicate and
+                collaborate effectively with others.
+              </p>
+              <p>
+                Turning to my hobbies, I enjoy spending time outdoors, including
+                hiking, cycling, camping, and snowboarding. These activities
+                demonstrate my passion for exploring new places and trying new
+                things. In terms of language proficiency, I am a native speaker
+                at a B2 level and have an intermediate level of proficiency in
+                several other languages, which shows my dedication to learning
+                and adapting to new cultures.
               </p>
               <Carousel
                 responsive={responsive}
@@ -48,20 +65,28 @@ export const Skills = () => {
                 className="skills-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="image" />
-                  <h5>Web Development</h5>
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="image" />
-                  <h5>Test 2</h5>
+                  <h5>Java</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="image" />
-                  <h5>Test 3</h5>
+                  <h5>PHP</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="image" />
-                  <h5>Test 4</h5>
+                  <h5>NodeJS</h5>
+                </div>
+                <div className="item">
+                  <h5>SQL – NoSQL</h5>
+                </div>
+                <div className="item">
+                  <h5>GIT – Jira</h5>
+                </div>
+                <div className="item">
+                  <h5>Teamwork</h5>
+                </div>
+                <div className="item">
+                  <h5>Proactive</h5>
                 </div>
               </Carousel>
             </div>
