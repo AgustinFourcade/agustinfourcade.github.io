@@ -337,7 +337,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   letter-spacing: 0.81x;
   line-height: 1.2em;
-  margin: 14px 0 75px 0;
+  margin: 30px 0 40px 0;
 }
 .skills-slider {
   width: 100%;
@@ -354,22 +354,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ workExperience CSS ************/
 .workExperience {
-  padding: 120px 0;
+  padding: 30px 0;
   position: relative;
 }
-.workExperience h2 {
+.workExperience h1 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
+  margin: 30px 0 40px 0;
+}
+.workExperience h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px 0 20px 0;
 }
 .workExperience p {
   color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  font-size: 20px;
+  letter-spacing: 0.81x;
+  line-height: 1.2em;
+  margin: 10px 0 20px 0;
   text-align: center;
-  width: 56%;
+  /* width: 56%; */
+}
+.workExperience i {
+  color: #b8b8b8;
+  font-size: 20px;
+  letter-spacing: 0.81x;
+  line-height: 1.2em;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  /* width: 56%; */
 }
  .workExperience .nav.nav-pills {
   width: 85%;

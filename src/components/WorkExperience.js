@@ -51,7 +51,7 @@ export const WorkExperience = () => {
                     isVisible ? "animate__animated animate__bounce" : ""
                   }
                 >
-                  <h2>Work Experience</h2>
+                  <h1>Work Experience</h1>
                 </div>
               )}
             </TrackVisibility>
@@ -78,7 +78,7 @@ export const WorkExperience = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     <h2>{experiences[0].title}</h2>
-                    <p>{experiences[0].date}</p>
+                    <i>{experiences[0].date}</i>
                     <p>{experiences[0].description}</p>
                     <p>{experiences[0].location}</p>
                   </Row>
@@ -87,7 +87,7 @@ export const WorkExperience = () => {
                   {" "}
                   <Row>
                     <h2>{experiences[1].title}</h2>
-                    <p>{experiences[1].date}</p>
+                    <i>{experiences[1].date}</i>
                     <p>{experiences[1].description}</p>
                     <p>{experiences[1].location}</p>
                   </Row>
@@ -95,7 +95,7 @@ export const WorkExperience = () => {
                 <Tab.Pane eventKey="third">
                   <Row>
                     <h2>{experiences[2].title}</h2>
-                    <p>{experiences[2].date}</p>
+                    <i>{experiences[2].date}</i>
                     <p>{experiences[2].description}</p>
                     <p>{experiences[2].location}</p>
                   </Row>
@@ -103,7 +103,7 @@ export const WorkExperience = () => {
                 <Tab.Pane eventKey="fourth">
                   <Row>
                     <h2>{experiences[3].title}</h2>
-                    <p>{experiences[3].date}</p>
+                    <i>{experiences[3].date}</i>
                     <p>{experiences[3].description}</p>
                     <p>{experiences[3].location}</p>
                   </Row>
