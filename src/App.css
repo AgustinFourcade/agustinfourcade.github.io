@@ -273,6 +273,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+.banner h3 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner h3 span {
+  color: rgba(217, 0, 255, 0.72);
+}
 .banner p {
   color: #b8b8b8;
   font-size: 18px;
@@ -373,7 +384,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   border: 0px solid rgba(255, 255, 255, 0.5);
 }
-.skills-icon a::before{
+.skills-icon a::before {
   content: "";
   width: 95px;
   height: 95px;
@@ -412,6 +423,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   text-align: center;
   margin: 0px 0 20px 0;
+}
+.work-icon {
+  text-align: center;
+}
+.work-icon a {
+  width: 550px;
+  height: 550px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -125px;
 }
 .workExperience p {
   color: #b8b8b8;

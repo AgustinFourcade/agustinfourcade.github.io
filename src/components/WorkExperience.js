@@ -2,6 +2,10 @@ import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import ikea from "../assets/img/Ikea_logo.svg";
+import cencosud from "../assets/img/cencosud.svg";
+import fulljaus from "../assets/img/fulljaus.png";
+import cognitive from "../assets/img/cognitive.jpg";
 
 export const WorkExperience = () => {
   const experiences = [
@@ -78,6 +82,9 @@ export const WorkExperience = () => {
                     <i>{experiences[0].date}</i>
                     <p>{experiences[0].description}</p>
                     <p>{experiences[0].location}</p>
+                    <div className="work-icon">
+                      <a href="#workExperience">{<img src={ikea} />}</a>
+                    </div>
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
@@ -88,7 +95,10 @@ export const WorkExperience = () => {
                     <p1>{experiences[1].description}</p1>
                     <p1>{experiences[1].description1}</p1>
                     <p1>{experiences[1].description2}</p1>
-                    <p>{experiences[1].location}</p>
+                    <p>{experiences[1].location}</p>{" "}
+                    <div className="work-icon">
+                      <a href="#workExperience">{<img src={cencosud} />}</a>
+                    </div>
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
@@ -96,7 +106,10 @@ export const WorkExperience = () => {
                     <h2>{experiences[2].title}</h2>
                     <i>{experiences[2].date}</i>
                     <p>{experiences[2].description}</p>
-                    <p>{experiences[2].location}</p>
+                    <p>{experiences[2].location}</p>{" "}
+                    <div className="work-icon">
+                      <a href="#workExperience">{<img src={fulljaus} />}</a>
+                    </div>
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="fourth">
@@ -104,7 +117,10 @@ export const WorkExperience = () => {
                     <h2>{experiences[3].title}</h2>
                     <i>{experiences[3].date}</i>
                     <p>{experiences[3].description}</p>
-                    <p>{experiences[3].location}</p>
+                    <p>{experiences[3].location}</p>{" "}
+                    <div className="work-icon">
+                      <a href="#workExperience">{<img src={cognitive} />}</a>
+                    </div>
                   </Row>
                 </Tab.Pane>
               </Tab.Content>

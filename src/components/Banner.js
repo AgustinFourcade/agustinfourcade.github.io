@@ -9,13 +9,13 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
+    "Software Engineer",
     "Backend Developer",
     "Frontend Developer",
-    "FullStack Developer",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100); //How much faster the letters are written
-  const period = 200; //How much time pass between letters
+  const period = 150; //How much time pass between letters
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -44,7 +44,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(100);
+      setDelta(200);
     }
   };
 
@@ -56,12 +56,16 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={"animate__animated animate__slideInLeft"}>
-                  <span className="tagline">Welcome to my portfolio</span>
+                  <span className="tagline">Hello, it's me</span>
                   <h1>
-                    {"Hi I'm Agustin Fourcade "}
-                    <span className="wrap" Backend Developer>
-                      {text}
-                    </span>
+                    {/* <h3></h3> */}
+                    <h1>Agustin Fourcade</h1>
+                    <h3>
+                      And I'm{" "}
+                      <span className="wrap" Software Engineer>
+                        {text}
+                      </span>
+                    </h3>
                   </h1>
                   <p>
                     As a programmer, I possess extensive experience in multiple
