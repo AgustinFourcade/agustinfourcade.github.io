@@ -1,9 +1,5 @@
 import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
-import { ProjectCard } from "./ProjectsCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -19,8 +15,9 @@ export const WorkExperience = () => {
     {
       title: "Cencosud – Junior Software Engineer",
       date: "August 2021 – January 2023",
-      description:
-        "• Development of a search engine in Node JS. • Infrastructure development with Terraform IaC. • Search engine optimization.",
+      description: "• Development of a search engine in Node JS.",
+      description1: "• Infrastructure development with Terraform IaC",
+      description2: "• Search engine optimization.",
       location: "Argentina 🇦🇷",
     },
     {
@@ -88,7 +85,9 @@ export const WorkExperience = () => {
                   <Row>
                     <h2>{experiences[1].title}</h2>
                     <i>{experiences[1].date}</i>
-                    <p>{experiences[1].description}</p>
+                    <p1>{experiences[1].description}</p1>
+                    <p1>{experiences[1].description1}</p1>
+                    <p1>{experiences[1].description2}</p1>
                     <p>{experiences[1].location}</p>
                   </Row>
                 </Tab.Pane>

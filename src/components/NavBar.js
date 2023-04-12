@@ -28,9 +28,7 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
-          {/* React-Bootstrap */}
-        </Navbar.Brand>
+        <Navbar.Brand href="#home">{/* React-Bootstrap */}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -55,9 +53,22 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
+              href="#academicFormation"
+              className={
+                activeLink === "academicFormation"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("academicFormation")}
+            >
+              Academic Formation
+            </Nav.Link>
+            <Nav.Link
               href="#workExperience"
               className={
-                activeLink === "workExperience" ? "active navbar-link" : "navbar-link"
+                activeLink === "workExperience"
+                  ? "active navbar-link"
+                  : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("workExperience")}
             >

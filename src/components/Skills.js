@@ -1,10 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import aws from "../assets/img/amazon-web-services-2.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -32,8 +29,8 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-box">
-              <h2>Skills</h2>
-              <p>
+              <h1>Skills</h1>
+              {/* <p>
                 I possess a range of skills in several programming languages.
               </p>
               <p>
@@ -58,8 +55,31 @@ export const Skills = () => {
                 at a B2 level and have an intermediate level of proficiency in
                 several other languages, which shows my dedication to learning
                 and adapting to new cultures.
+              </p> */}
+
+              <p>
+                I possess programming skills in multiple languages and am able
+                to create dynamic web applications.
               </p>
-              <Carousel
+              <p>
+                My knowledge of SQL and NoSQL databases enables me to design
+                scalable data solutions. Additionally, I have experience using
+                tools like GIT and Jira for project management and
+                collaboration.
+              </p>
+              <p>
+                I am proactive and able to solve problems effectively, and I
+                work well in a team environment.
+              </p>
+              <p>
+                My hobbies include outdoor activities like hiking 🥾, cycling
+                🚴🏻, camping ⛺️, and snowboarding 🏂.
+              </p>
+              <p>
+                I am also proficient in multiple languages , demonstrating my
+                dedication to learning and adapting to new cultures.
+              </p>
+              {/* <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="skills-slider"
@@ -88,11 +108,77 @@ export const Skills = () => {
                 <div className="item">
                   <h5>Proactive</h5>
                 </div>
-              </Carousel>
+              </Carousel> */}
             </div>
           </Col>
         </Row>
       </Container>
+      <div className="skills-icon">
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> /*java script */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" /> /*java */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" /> /*php */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" /> /*node */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> /*node */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+            /*mySQL */
+          }
+        </a>
+      </div>
+      <div className="skills-icon">
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+            /*Postres */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            /*GIT */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original-wordmark.svg" />
+            /*GCP */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+            /*docker */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
+            /*terraform */
+          }
+        </a>
+        <a>{<img src={aws} /> /*aws */}</a>
+      </div>
       <img className="background-image-left" src={colorSharp} />
     </section>
   );
