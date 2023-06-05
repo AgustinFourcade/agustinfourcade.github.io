@@ -56,7 +56,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={"animate__animated animate__slideInLeft"}>
-                  <span className="tagline">Hello, it's me</span>
+                  <span className="tagline">Hello, it's me! 😁👀</span>
                   <h1>
                     {/* <h3></h3> */}
                     <h1>Agustin Fourcade</h1>
