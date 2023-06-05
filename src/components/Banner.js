@@ -99,7 +99,7 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={11} md={5} xl={4}>
-            <div className="img-movement">
+            <div className="imgMovement">
               <img src={headerImage} alt="Header Img" />
             </div>
           </Col>
