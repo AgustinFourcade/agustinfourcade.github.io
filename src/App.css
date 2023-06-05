@@ -587,7 +587,7 @@
   .img-movement img {
     width: 60%;
     height: auto;
-    margin-left: 120px;
+    margin-left: 90px;
     margin-top: 30px;
     margin-bottom: -100px;
   }
@@ -614,7 +614,7 @@
   }
   nav.navbar {
     padding: 18px 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 9999;
@@ -648,8 +648,8 @@
     margin-left: 14px;
   }
   .social-icon a {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
@@ -669,8 +669,8 @@
   }
   .social-icon a::before {
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
@@ -788,22 +788,22 @@
       rgba(74, 47, 189, 0.5) 111.58%
     );
     border: 1px solid rgba(255, 255, 255, 0.5);
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 16px;
     display: inline-block;
   }
   .banner h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
   .banner h3 {
-    font-size: 35px;
+    font-size: 25px;
   }
   .banner h3 span {
     color: rgba(217, 0, 255, 0.72);
   }
   .banner p {
     color: #dddddd;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
@@ -876,13 +876,13 @@
     margin: 0 auto;
     position: relative;
   }
-  .background-image-left {
-    top: -130%;
+  /* .background-image-left {
+    top: -100%;
     position: absolute;
     bottom: 10;
     width: 120%;
     z-index: -4;
-  }
+  } */
   .skills-icon {
     text-align: center;
     margin-top: 20px;
@@ -937,14 +937,6 @@
   }
   .work-icon {
     text-align: center;
-  }
-  .work-icon a {
-    width: 550px;
-    height: 550px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -125px;
   }
   .academicFormation i,
   .academicFormation p,
