@@ -1,18 +1,18 @@
 /************ Custom Font ************/
 @font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Bold.ttf");
+  font-family: GoogleSans;
+  src: url("./assets/font/GoogleSans-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Medium.ttf");
+  font-family: GoogleSans;
+  src: url("./assets/font/GoogleSans-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Book.ttf");
-  font-weight: 400;
+  font-family: GoogleSans;
+  src: url("./assets/font/GoogleSans-Regular.ttf");
+  font-weight: 300;
 }
 
 /************ Default CSS ************/
@@ -55,7 +55,7 @@
     position: relative;
     background-color: #121212 !important;
     color: #fff !important;
-    font-family: Centra, sans-serif !important;
+    font-family: GoogleSans, sans-serif !important;
   }
   img {
     width: 100%;
@@ -242,12 +242,18 @@
   }
   .banner {
     margin-top: 0;
-    padding: 260px 0 100px;
-    background-image: url("./assets/img/banner-bg.png");
+    padding: calc(169px + (100vw - 700px) * (15 - 30) / (700 - 1000));
+    /* background-image: url(./assets/img/background-1.png); */
+    /* background-image: url(./assets/img/background-2.jpeg); */
+    /* background-image: url(./assets/img/background-3.jpeg); */
+    /* background-image: url(./assets/img/background-4.jpeg); */
+    /* background-image: url(./assets/img/bg-test-1.jpg); */
+    /* background-image: url(./assets/img/bg-test-2.jpg); */
+    background-image: url(./assets/img/bg-test-3.jpg);
     background-position: top center;
     background-size: cover;
-    background-repeat: no-repeat;
   }
+
   .banner .tagline {
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -272,11 +278,11 @@
     color: rgba(217, 0, 255, 0.72);
   }
   .banner p {
-    color: #b8b8b8;
+    color: #d0d0d0;
     font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    width: 96%;
+    letter-spacing: 1.2px;
+    line-height: 1.4em;
+    margin: 30px 0 40px;
   }
   .banner button {
     color: #fff;
@@ -337,7 +343,7 @@
   .skills p {
     color: #b8b8b8;
     font-size: 20px;
-    letter-spacing: 0.81x;
+    letter-spacing: 0.81px;
     line-height: 1.2em;
     margin: 30px 0 40px;
   }
@@ -347,7 +353,7 @@
     position: relative;
   }
   .background-image-left {
-    top: -130%;
+    top: -40%;
     position: absolute;
     bottom: 0;
     width: 120%;
@@ -422,7 +428,7 @@
   .workExperience p {
     color: #b8b8b8;
     font-size: 20px;
-    letter-spacing: 0.81x;
+    letter-spacing: 0.81px;
     line-height: 1.2em;
     margin: 10px 0 20px;
     text-align: center;
@@ -431,7 +437,7 @@
   .workExperience p1 {
     color: #b8b8b8;
     font-size: 20px;
-    letter-spacing: 0.81x;
+    letter-spacing: 0.81px;
     line-height: 0.3em;
     margin: 10px 0 20px;
     text-align: center;
@@ -531,10 +537,10 @@
     width: 33.33333%;
   }
   .background-image-right {
-    top: 20%;
+    top: -200%;
     position: absolute;
     bottom: 0;
-    width: 35%;
+    width: 42%;
     right: 0;
     z-index: -4;
   }
@@ -578,7 +584,7 @@
     position: relative;
     background-color: #121212 !important;
     color: #fff !important;
-    font-family: Centra, sans-serif !important;
+    font-family: GoogleSans, sans-serif !important;
   }
   img {
     width: 60%;
@@ -772,11 +778,16 @@
   }
   .banner {
     margin-top: 0;
-    padding: 260px 0 100px;
-    background-image: url("./assets/img/banner-bg.png");
+    padding: 260px 0;
+    /* background-image: url(./assets/img/background-1.png); */
+    /* background-image: url(./assets/img/background-2.jpeg); */
+    /* background-image: url(./assets/img/background-3.jpeg); */
+    /* background-image: url(./assets/img/background-4.jpeg); */
+    /* background-image: url(./assets/img/bg-test-1.jpg); */
+    /* background-image: url(./assets/img/bg-test-2.jpg); */
+    background-image: url(./assets/img/bg-test-3.jpg);
     background-position: top center;
     background-size: cover;
-    background-repeat: no-repeat;
   }
   .banner .tagline {
     font-weight: 700;
@@ -793,20 +804,21 @@
     display: inline-block;
   }
   .banner h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
   .banner h3 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .banner h3 span {
     color: rgba(217, 0, 255, 0.72);
   }
   .banner p {
-    color: #dddddd;
+    color: #d0d0d0;
     font-size: 16px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    width: 96%;
+    letter-spacing: 1.2px;
+    line-height: 1.4em;
+    margin: 30px 0 40px;
+    /* width: 67%; */
   }
   .banner button {
     color: #fff;
@@ -867,7 +879,7 @@
   .skills p {
     color: #b8b8b8;
     font-size: 20px;
-    letter-spacing: 0.81x;
+    letter-spacing: 0.81px;
     line-height: 1.2em;
     margin: 30px 0 40px;
   }
@@ -877,7 +889,11 @@
     position: relative;
   }
   .background-image-left {
-    display: none;
+    top: -20%;
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    z-index: -4;
   }
   .skills-icon {
     text-align: center;

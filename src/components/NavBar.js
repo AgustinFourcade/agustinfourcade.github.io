@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import linkedinIcon from "../assets/img/linkedin-icon.svg";
+import instagramIcon from "../assets/img/instagram-icon.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -88,7 +88,7 @@ export const NavBar = () => {
                     .focus()
                 }
               >
-                <img src={navIcon1} alt=""></img>
+                <img src={linkedinIcon} alt=""></img>
               </a>
               <a
                 href="#"
@@ -98,7 +98,7 @@ export const NavBar = () => {
                     .focus()
                 }
               >
-                <img src={navIcon3} alt=""></img>
+                <img src={instagramIcon} alt=""></img>
               </a>
             </div>
             <button

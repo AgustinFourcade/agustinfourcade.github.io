@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/img/color-sharp.png";
+import colorSharp from "../assets/img/color-sharp-pink.png";
+// import colorSharp from "../assets/img/color-sharp-blue.png";
 import aws from "../assets/img/amazon-web-services-2.svg";
 
 export const Skills = () => {
