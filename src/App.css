@@ -804,10 +804,10 @@
     display: inline-block;
   }
   .banner h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
   .banner h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .banner h3 span {
     color: rgba(217, 0, 255, 0.72);
