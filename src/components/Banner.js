@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImage from "../assets/img/header-img.svg";
+import astronauta from "../assets/img/astronauta.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import background1 from "../assets/img/background-1.png";
+import background2 from "../assets/img/background-2.jpeg";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -100,7 +102,7 @@ export const Banner = () => {
           </Col>
           <Col xs={11} md={5} xl={4}>
             <div className="imgMovement">
-              <img src={headerImage} alt="Header Img" />
+              <img src={astronauta} alt="Header Img" />
             </div>
           </Col>
         </Row>

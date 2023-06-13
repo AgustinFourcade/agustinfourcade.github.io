@@ -1,8 +1,9 @@
 import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+// import colorSharp2 from "../assets/img/color-sharp2-blue.png";
+import colorSharp2 from "../assets/img/color-sharp2-pink.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import ikea from "../assets/img/Ikea_logo.svg";
+import ikea from "../assets/img/ikea-logo.svg";
 import cencosud from "../assets/img/cencosud.svg";
 import fulljaus from "../assets/img/fulljaus.png";
 import cognitive from "../assets/img/cognitive.jpg";

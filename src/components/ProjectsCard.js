@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-// import imgUrl from "../assets/img/logo.svg"
 
 export const ProjectCard = ({ title, description, imgUrl }) => {
   return (
