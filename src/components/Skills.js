@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp-pink.png";
 // import colorSharp from "../assets/img/color-sharp-blue.png";
-import aws from "../assets/img/amazon-web-services-2.svg";
+import aws from "../assets/img/amazon-web-services-logo-svgrepo-com.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -140,12 +140,6 @@ export const Skills = () => {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> /*node */
           }
         </a>
-        <a href="#skills">
-          {
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-            /*mySQL */
-          }
-        </a>
       </div>
       <div className="skills-icon">
         <a href="#skills">
@@ -178,7 +172,26 @@ export const Skills = () => {
             /*terraform */
           }
         </a>
-        <a>{<img src={aws} /> /*aws */}</a>
+        <a href="#skills">
+          {
+            <img src={aws} />
+            /*aws */
+          }
+        </a>
+      </div>
+      <div className="skills-icon">
+        <a href="#skills">
+          {
+            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" />
+            /*mongodb */
+          }
+        </a>
+        <a href="#skills">
+          {
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+            /*mySQL */
+          }
+        </a>
       </div>
       <img className="background-image-left" src={colorSharp} />
     </section>
