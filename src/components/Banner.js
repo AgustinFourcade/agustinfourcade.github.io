@@ -68,18 +68,18 @@ export const Banner = () => {
                     </h3>
                   </h1>
                   <p>
-                    As a programmer, I possess extensive experience in multiple
-                    programming languages for both front-end and back-end
-                    development, including JavaScript, Java, PHP, Node, and
-                    React. Furthermore, I have a solid knowledge of both
-                    relational and non-relational databases, which enables me to
-                    design scalable solutions and solve complex technical
-                    problems. I excel in developing complex web applications and
-                    pay great attention to detail when implementing projects.
-                    With a strong understanding of programming principles and
-                    excellent interpersonal skills, I am able to work both
-                    independently and collaboratively to achieve project goals
-                    effectively and efficiently.
+                    I am an experienced programmer skilled in multiple languages
+                    such as JavaScript, Java, PHP, Node, and React, with
+                    expertise in both front-end and back-end development. I have
+                    a strong understanding of databases, allowing me to create
+                    scalable solutions and solve complex technical problems. I
+                    pay great attention to detail in developing web applications
+                    and can work independently or collaboratively. Outside of
+                    work, I enjoy traveling and being in nature, particularly in
+                    the mountains ⛰️. I am relocating to Sweden 🇸🇪 to pursue
+                    personal goals and improve my English. My next adventure is
+                    to drive along Argentina's Route 40, exploring its scenic
+                    beauty 🚗.
                   </p>
                   <button
                     onClick={() =>
