@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
@@ -10,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Routes>
           <Route path="/kochanie-days" element={<KochanieDays />} />
@@ -28,7 +33,7 @@ function App() {
           />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
