@@ -22,29 +22,27 @@
   background-size: cover;
   min-height: 100vh;
   min-width: 50vh;
- }
+}
 
-.txt-1 {
+.cph {
   display: flex;
   margin: 0px 1rem;
   justify-content: center;
 }
-
-.txt-1 h1 {
-  font-size: 5rem;
-}
-
-.txt-1 h2 {
+.cita {
   display: flex;
-  font-size: 4rem;
-}
-.contenedor h2 {
-  display: flex;
-  font-size: 1.75rem;
+  margin: 5rem 1rem;
   justify-content: center;
 }
-.contenedor{
-  margin-top: 12rem;
+.highlight {
+  margin: 0rem 1rem;
+  font-weight: bold;
+  font-size: 2.3rem;
+  /* Otros estilos según tus preferencias */
+}
+
+.contenedor {
+  margin-top: 3rem;
 }
 
 /************ Default CSS ************/
