@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export const KochanieDays = () => {
   const calculateTimeLeft = () => {
     const now = new Date();
-    const targetDate = new Date("2024-02-17T19:00:00Z");
+    const targetDate = new Date("2024-02-17T18:00:00Z");
     const difference = targetDate - now;
 
     if (difference > 0) {
@@ -22,7 +22,7 @@ export const KochanieDays = () => {
 
   const calculateTimeLeftForDate = () => {
     const now = new Date();
-    const targetDate = new Date("2024-01-15T17:00:00Z");
+    const targetDate = new Date("2024-01-15T16:00:00Z");
     const difference = targetDate - now;
 
     if (difference > 0) {
