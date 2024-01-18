@@ -22,7 +22,7 @@ export const KochanieDays = () => {
 
   const calculateTimeLeftForDate = () => {
     const now = new Date();
-    const targetDate = new Date("2024-01-15T16:00:00Z");
+    const targetDate = new Date("2024-01-24T16:00:00Z");
     const difference = targetDate - now;
 
     if (difference > 0) {
