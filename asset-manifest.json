@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fb32d5a.css",
-    "main.js": "/static/js/main.7d86de26.js",
+    "main.css": "/static/css/main.098d588b.css",
+    "main.js": "/static/js/main.c28fbc08.js",
     "static/js/787.5a918fbb.chunk.js": "/static/js/787.5a918fbb.chunk.js",
-    "static/media/kochaniePhoto.jpg": "/static/media/kochaniePhoto.2834e4c32d3bc353240f.jpg",
+    "static/media/ojosPhoto.JPG": "/static/media/ojosPhoto.0861d1102002af30649f.JPG",
     "static/media/color-sharp-pink.png": "/static/media/color-sharp-pink.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2-pink.png": "/static/media/color-sharp2-pink.c87586c6c2f549cb4aa6.png",
     "static/media/background-2.jpeg": "/static/media/background-2.ab95163ce419919c7aae.jpeg",
     "static/media/background-1.png": "/static/media/background-1.cc1273af450504afe755.png",
-    "static/media/astronauta.svg": "/static/media/astronauta.400baa4260daac98f2b2b1ccf08761c2.svg",
+    "static/media/astronauta.svg": "/static/media/astronauta.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/GoogleSans-Regular.ttf": "/static/media/GoogleSans-Regular.bec0591b6a291c3ca895.ttf",
     "static/media/GoogleSans-Medium.ttf": "/static/media/GoogleSans-Medium.963c3e555aaada9ef8a9.ttf",
     "static/media/GoogleSans-Bold.ttf": "/static/media/GoogleSans-Bold.d907e4bf3e32637a636e.ttf",
@@ -16,18 +16,18 @@
     "static/media/cencosud.svg": "/static/media/cencosud.27b0a992d8062809250a41c7c0c8e76a.svg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/amazon-web-services-logo-svgrepo-com.svg": "/static/media/amazon-web-services-logo-svgrepo-com.1475948517917276a5ff19bfdcc94eae.svg",
+    "static/media/amazon-web-services-logo-svgrepo-com.svg": "/static/media/amazon-web-services-logo-svgrepo-com.8613fa6e2e7a5bed2c08320b9685bf9d.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/ikea-logo.svg": "/static/media/ikea-logo.c83046890ad3433ca75c17db36f45019.svg",
-    "static/media/instagram-icon.svg": "/static/media/instagram-icon.72cef43bc93b04f52e29f022ef720f8b.svg",
-    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.dff40ae802524d8fc0cbce3f312abe4f.svg",
+    "static/media/ikea-logo.svg": "/static/media/ikea-logo.786d1de3a54bdb57832b31b3df9027f9.svg",
+    "static/media/instagram-icon.svg": "/static/media/instagram-icon.08b285abb8e118b52637efa5d65c5367.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/index.html",
-    "main.6fb32d5a.css.map": "/static/css/main.6fb32d5a.css.map",
-    "main.7d86de26.js.map": "/static/js/main.7d86de26.js.map",
+    "main.098d588b.css.map": "/static/css/main.098d588b.css.map",
+    "main.c28fbc08.js.map": "/static/js/main.c28fbc08.js.map",
     "787.5a918fbb.chunk.js.map": "/static/js/787.5a918fbb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fb32d5a.css",
-    "static/js/main.7d86de26.js"
+    "static/css/main.098d588b.css",
+    "static/js/main.c28fbc08.js"
   ]
 }
