@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export const KochanieDays = () => {
   const calculateTimeLeft = () => {
     const now = new Date();
-    const targetDate = new Date("2024-02-17T18:00:00Z");
+    const targetDate = new Date("2025-12-30T14:10:00Z");
     const difference = targetDate - now;
 
     if (difference > 0) {
@@ -63,10 +63,10 @@ export const KochanieDays = () => {
             <span className="highlight">{timeLeft.hours}</span>horas,
             <br />
             <span className="highlight">{timeLeft.minutes}</span>minutos para
-            ver al amor de mi vida ❤️
+            ver a mi gordita 🇦🇷❤️
           </h1>
         </div>
-        <div className="cita">
+        {/* <div className="cita">
           <h1>
             Faltan: <br />
             <span className="highlight">{timeLeftForDate.days}</span>días,
@@ -77,7 +77,7 @@ export const KochanieDays = () => {
             <span className="highlight">{timeLeftForDate.minutes}</span>minutos
             para nuestra cita virtual 💬
           </h1>
-        </div>
+        </div> */}
 
         {/* <h2> Quedan:</h2>
         <div class="txt-1">
