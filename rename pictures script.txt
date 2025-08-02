@@ -1,0 +1,1 @@
+$files = Get-ChildItem -File | Sort-Object Name; $counter = 1; foreach ($file in $files) { $extension = $file.Extension; $newName = "$counter$extension"; Rename-Item -Path $file.FullName -NewName $newName; $counter++ }

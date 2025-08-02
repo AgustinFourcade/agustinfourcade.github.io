@@ -1,6 +1,29 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import images from "../components/getKochanieImages";
 
 export const KochanieDays = () => {
+  const getRandomImage = () =>
+    images[Math.floor(Math.random() * images.length)];
+
+  const [currentImage, setCurrentImage] = useState(getRandomImage());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage(getRandomImage());
+    }, 86400000); // 24 horas en ms
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const style = {
+    backgroundImage: `url(${currentImage})`,
+    position: "fixed",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    minHeight: "100vh",
+    minWidth: "50vh",
+  };
+
   const calculateTimeLeft = () => {
     const now = new Date();
     const targetDate = new Date("2025-12-30T14:10:00Z");
@@ -54,7 +77,7 @@ export const KochanieDays = () => {
   }, []);
 
   return (
-    <section className="kochanieDays" id="kochanieDays">
+    <section style={style} className="kochanieDays" id="kochanieDays">
       <div class="contenedor">
         <div className="cph">
           <h1>
