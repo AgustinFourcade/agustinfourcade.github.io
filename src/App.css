@@ -15,14 +15,14 @@
   font-weight: 300;
 }
 
-.kochanieDays {
+/* .kochanieDays {
   background-image: url("../src/assets/img/ojosPhoto.JPG");
   position: fixed;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
   min-width: 50vh;
-}
+} */
 
 .cph {
   display: flex;
