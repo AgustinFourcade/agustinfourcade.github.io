@@ -4,8 +4,24 @@ import images from "../components/getKochanieImages";
 export const KochanieDays = () => {
   const getRandomImage = () =>
     images[Math.floor(Math.random() * images.length)];
+  const getImageBasedOnDate = () => images[new Date().getDate() % images.length]; // Cambiado para que sea dinámico
 
   const [currentImage, setCurrentImage] = useState(getRandomImage());
+
+  useEffect(() => {
+    function checkIsMidnight() {
+      const now = new Date();
+      return now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0;
+    }
+
+    if (checkIsMidnight()) {
+      setCurrentImage(getRandomImage());
+      console.log("New image set at midnight");
+    } else {
+      setCurrentImage(getImageBasedOnDate());
+      console.log(`Using image based on date ${new Date().getDate()} as it's not midnight`);
+    }
+  }, []); // se ejecuta solo una vez al montar
 
   useEffect(() => {
     const interval = setInterval(() => {
