@@ -5,7 +5,7 @@ export const KochanieDays = () => {
   const getRandomImage = () =>
     images[Math.floor(Math.random() * images.length)];
   const getImageBasedOnDate = () =>
-    images[(new Date().getDate() % images.length) + 87]; // Cambiado para que sea dinámico
+    images[(new Date().getDate() % images.length)]; // Cambiado para que sea dinámico
 
   const [currentImage, setCurrentImage] = useState(getRandomImage());
 
