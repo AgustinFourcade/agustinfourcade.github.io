@@ -15,34 +15,57 @@
   font-weight: 300;
 }
 
-/* .kochanieDays {
-  background-image: url("../src/assets/img/ojosPhoto.JPG");
-  position: fixed;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  min-width: 50vh;
-} */
+.countdown-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.8rem;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 29px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 29px rgba(0, 0, 0, 0.3);
+}
 
-.cph {
-  display: flex;
-  margin: 0px 1rem;
-  justify-content: center;
-}
-.cita {
-  display: flex;
-  margin: 5rem 1rem;
-  justify-content: center;
-}
 .highlight {
-  margin: 0rem 1rem;
-  font-weight: bold;
-  font-size: 2.3rem;
-  /* Otros estilos según tus preferencias */
+  margin: 0 0.25rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.contenedor {
-  margin-top: 3rem;
+.frase {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffffdd;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.amorcito {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffcbcb;
+  margin-top: 0.3rem;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* oscuro con opacidad */
+  z-index: 0;
+}
+
+.countdown-card {
+  position: relative;
+  z-index: 1;
 }
 
 /************ Default CSS ************/

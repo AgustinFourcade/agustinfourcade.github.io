@@ -4,14 +4,19 @@ import images from "../components/getKochanieImages";
 export const KochanieDays = () => {
   const getRandomImage = () =>
     images[Math.floor(Math.random() * images.length)];
-  const getImageBasedOnDate = () => images[new Date().getDate() % images.length]; // Cambiado para que sea dinámico
+  const getImageBasedOnDate = () =>
+    images[(new Date().getDate() % images.length) + 87]; // Cambiado para que sea dinámico
 
   const [currentImage, setCurrentImage] = useState(getRandomImage());
 
   useEffect(() => {
     function checkIsMidnight() {
       const now = new Date();
-      return now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0;
+      console.log("🚀 ~ now:", now);
+      console.log("\n");
+      return (
+        now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0
+      );
     }
 
     if (checkIsMidnight()) {
@@ -19,7 +24,9 @@ export const KochanieDays = () => {
       console.log("New image set at midnight");
     } else {
       setCurrentImage(getImageBasedOnDate());
-      console.log(`Using image based on date ${new Date().getDate()} as it's not midnight`);
+      console.log(
+        `Using image based on date ${new Date().getDate()} as it's not midnight`
+      );
     }
   }, []); // se ejecuta solo una vez al montar
 
@@ -34,10 +41,12 @@ export const KochanieDays = () => {
   const style = {
     backgroundImage: `url(${currentImage})`,
     position: "fixed",
-    backgroundPosition: "center",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    height: "100vh",
+    backgroundPosition: "center center",
     backgroundSize: "cover",
-    minHeight: "100vh",
-    minWidth: "50vh",
   };
 
   const calculateTimeLeft = () => {
@@ -94,58 +103,31 @@ export const KochanieDays = () => {
 
   return (
     <section style={style} className="kochanieDays" id="kochanieDays">
-      <div class="contenedor">
-        <div className="cph">
+      <div className="overlay" />
+        <div className="countdown-card">
           <h1>
-            Faltan: <br /> <span className="highlight">{timeLeft.days}</span>
-            días, <br />
-            <span className="highlight">{timeLeft.hours}</span>horas,
-            <br />
-            <span className="highlight">{timeLeft.minutes}</span>minutos para
-            ver a mi gordita 🇦🇷❤️
+            <span className="frase">Faltan: </span>
+            <span className="highlight">{timeLeft.days}</span> días,
+            <span className="highlight"> {timeLeft.hours}</span> horas,
+            <span className="highlight"> {timeLeft.minutes}</span> minutos y
+            <span className="highlight"> {timeLeft.seconds}</span> segundos
+            <h2 className="amorcito">para abrazar a mi personita favorita 🇦🇷❤️</h2>
           </h1>
-        </div>
-        {/* <div className="cita">
+        {/* Si quieres mostrar la cuenta regresiva para la cita virtual, descomenta esto */}
+        {/* 
+        <div className="cita">
           <h1>
-            Faltan: <br />
-            <span className="highlight">{timeLeftForDate.days}</span>días,
+            Faltan:
             <br />
-            <span className="highlight">
-              {timeLeftForDate.hours}
-            </span>horas, <br />
-            <span className="highlight">{timeLeftForDate.minutes}</span>minutos
+            <span className="highlight">{timeLeftForDate.days}</span> días,
+            <span className="highlight"> {timeLeftForDate.hours}</span> horas,
+            <span className="highlight"> {timeLeftForDate.minutes}</span> minutos,
+            <span className="highlight"> {timeLeftForDate.seconds}</span> segundos
+            <br />
             para nuestra cita virtual 💬
           </h1>
-        </div> */}
-
-        {/* <h2> Quedan:</h2>
-        <div class="txt-1">
-          <h1>{timeLeft.days} </h1>
-          <div class="txt-1">
-            <h2> días,</h2>
-          </div>
         </div>
-        <div class="txt-1">
-          <h1>{timeLeft.hours} </h1>
-          <div class="txt-1">
-            <h2>horas,</h2>
-          </div>
-        </div>
-        <div class="txt-1">
-          <h1>{timeLeft.minutes} </h1>
-          <div class="txt-1">
-            <h2>minutos y</h2>
-          </div>
-        </div>
-        <div class="txt-1">
-          <h1>{timeLeft.seconds} </h1>
-          <div class="txt-1">
-            <h2>segundos</h2>
-          </div>
-        </div>
-        <div>
-          <h2>para ver al amor de mi vida ❤️</h2>
-        </div> */}
+        */}
       </div>
     </section>
   );
