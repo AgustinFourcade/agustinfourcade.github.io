@@ -2,10 +2,14 @@ import { useState, useEffect } from "react";
 import images from "../components/getKochanieImages";
 
 export const KochanieDays = () => {
+  const startDate = new Date(2025, 8, 16);
+  const today = new Date();
+
+  const diffDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+  
   const getRandomImage = () =>
     images[Math.floor(Math.random() * images.length)];
-  const getImageBasedOnDate = () =>
-    images[(new Date().getDate() % images.length)]; // Cambiado para que sea dinámico
+  const getImageBasedOnDays = () => images[diffDays % images.length];
 
   const [currentImage, setCurrentImage] = useState(getRandomImage());
 
@@ -23,10 +27,7 @@ export const KochanieDays = () => {
       setCurrentImage(getRandomImage());
       console.log("New image set at midnight");
     } else {
-      setCurrentImage(getImageBasedOnDate());
-      console.log(
-        `Using image based on date ${new Date().getDate()} as it's not midnight`
-      );
+      setCurrentImage(getImageBasedOnDays());
     }
   }, []); // se ejecuta solo una vez al montar
 
@@ -104,15 +105,17 @@ export const KochanieDays = () => {
   return (
     <section style={style} className="kochanieDays" id="kochanieDays">
       <div className="overlay" />
-        <div className="countdown-card">
-          <h1>
-            <span className="frase">Faltan: </span>
-            <span className="highlight">{timeLeft.days}</span> días,
-            <span className="highlight"> {timeLeft.hours}</span> horas,
-            <span className="highlight"> {timeLeft.minutes}</span> minutos y
-            <span className="highlight"> {timeLeft.seconds}</span> segundos
-            <h2 className="amorcito">para abrazar a mi personita favorita 🇦🇷❤️</h2>
-          </h1>
+      <div className="countdown-card">
+        <h1>
+          <span className="frase">Faltan: </span>
+          <span className="highlight">{timeLeft.days}</span> días,
+          <span className="highlight"> {timeLeft.hours}</span> horas,
+          <span className="highlight"> {timeLeft.minutes}</span> minutos y
+          <span className="highlight"> {timeLeft.seconds}</span> segundos
+          <h2 className="amorcito">
+            para abrazar a mi personita favorita 🇦🇷❤️
+          </h2>
+        </h1>
         {/* Si quieres mostrar la cuenta regresiva para la cita virtual, descomenta esto */}
         {/* 
         <div className="cita">
