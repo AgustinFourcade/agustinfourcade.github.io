@@ -11,6 +11,7 @@ import { Skills } from "./components/Skills";
 import { WorkExperience } from "./components/WorkExperience";
 import { AcademicFormation } from "./components/AcademicFormation";
 import { KochanieDays } from "./components/KochanieDays";
+import { PipiDays } from "./components/PipiDays";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/kochanie-days" element={<KochanieDays />} />
+          <Route path="/pipi-days" element={<PipiDays />} />
           <Route
             path="/"
             element={
